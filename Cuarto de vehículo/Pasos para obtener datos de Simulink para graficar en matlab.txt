@@ -1,0 +1,10 @@
+Dentro de Scope ir a View, Configuration Properties, Logging.
+Asignar un nombre a la variable, formato: Structure with Time.
+Luego correr la simulación. En la terminal de matlab ejecutar el siguiente comando:
+"nombre_variable = out.nombre_variable;
+save('nombre_variable.mat', 'nombre_variable');"
+Observar que en grafica.m se pusieron otros nombres, pero con el ejemplo anterior sería así:
+"load('nombre_variable.mat')
+t_pasivo=nombre_variable.time;
+variable1=nombre_variable.signals(1).values;
+variable2=nombre_variable.signals(2).values;"
